@@ -1,0 +1,103 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Haven Singapore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">PET-HAVEN</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">PAWSITIVITY</h2>
+            <p class="hero-subtitle">Explore your passion for pets</p>
+            <button class="cta-button">View services</button>
+        </div>
+    </section>
+
+    
+    <section class="about" id="about">
+        <div class="about-container">
+            <h3 class="section-title">WHO ARE WE</h3>
+            <h2>Empowering pet lovers in Singapore</h2>
+            <p>At PET-HAVEN, we empower pet owners in Singapore to turn their passion for animals into rewarding side hustles. Whether it's pet sitting, mobile vet services, or creating pet-friendly workspaces, we provide innovative ideas and solutions. Join us as we celebrate the joy of pets and the entrepreneurial spirit!</p>
+            <a href="#contact" class="contact-link">Get In Touch With US</a>
+        </div>
+        <div class="about-image">
+            <img src="dog.jpg" alt="A cute pug with a yellow background">
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h3 class="section-title">OUR IDEAS</h3>
+        <h2>Unlock your potential with us</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="pug.jpg" alt="Pet Sitting">
+                <h4>Pet Sitting ></h4>
+                <p>Reliable care for your pets while you’re away.</p>
+            </div>
+            <div class="service-item">
+                <img src="mobilevet.jpg" alt="Mobile Vet Services">
+                <h4>Mobile Vet Services ></h4>
+                <p>Convenience and care for your pets at home.</p>
+            </div>
+            <div class="service-item">
+                <img src="PAW.jpg" alt="Pet-Friendly Workspaces">
+                <h4>Pet-Friendly Workspaces ></h4>
+                <p>Create an inclusive environment for pet lovers.</p>
+            </div>
+        </div>
+        <div class="consultation-info">
+            <div class="consultation-item">
+                <h4>Initial Consultation for $150 ></h4>
+                <p>150</p>
+            </div>
+            <div class="consultation-item">
+                <h4>Follow-Up Consultation for $100 ></h4>
+                <p>100</p>
+            </div>
+        </div>
+    </section>
+
+    <div  id = 'contact' class = ' contact-container'>
+        <div class = 'form section'>
+            <h3>Get In Touch</h3>
+            <h1> Reach Out for Support</h1>
+            <form>
+                <label for ='Name'>Name</label>
+                <input type = 'text' id="name" name="name" placeholder="John Doe" required>
+                
+                <label for ="Email"> Email Address</label>
+                <input type = 'email' id = 'email' name="email" placeholder="email@website.com">
+
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="98765432" required>
+
+        
+                <label for="message">Message</label>
+                <textarea id ="message" name = 'message' placeholder=""></textarea>
+                <div>
+                    <input type="checkbox" id="consent" name="content required">
+                    <label for="consent">
+                    I allow this website to store my submission so they can respond to my inquiry</label>
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
