@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -12,19 +13,20 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0; 
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-start;
 }
+
 
 .logo {
     color: white;
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    display: flex;
-    align-items: baseline;
+    padding-left: 20px; 
 }
 
 .nav-links {
@@ -36,9 +38,9 @@ body {
 }
 
 .navbar {
-    flex-grow: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
+    flex-grow: 1;
 }
 
 .nav-links li {
@@ -59,10 +61,8 @@ body {
 .nav-links a:last-child {
     border: 2px solid white;
     border-radius: 5px;
-    padding: 5px 15px; 
+    padding: 5px 15px;
 }
-
-
 
 .hero {
     height: 100vh;
@@ -90,7 +90,15 @@ body {
     font-size: 20px;
     cursor: pointer;
     margin-top: 20px;
+    text-decoration: none; 
+    display: inline-block; 
 }
+
+.cta-button a {
+    color: white; 
+    text-decoration: none; 
+}
+
 
 .about {
     display: flex;
