@@ -102,20 +102,21 @@ body {
 
 .about {
     display: flex;
+    justify-content: center;
+    align-items: center;    
     padding: 60px 20px;
-    align-items: center;
     gap: 40px;
 }
 
 .about-container {
     max-width: 600px;
+    text-align: center; 
 }
 
 .about-image img {
-    width:  500px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: end;
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 10px; 
 }
 
 .section-title {
