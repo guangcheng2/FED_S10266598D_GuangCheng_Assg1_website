@@ -71,58 +71,56 @@
     </section>
 
     <div id="contact" class="contact-container">
-        <div class="form section">
-            <h3>Get In Touch</h3>
-            <h1>Reach Out for Support</h1>
-            <form>
-                <label for="Name">Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
-                
-                <label for="Email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="email@website.com">
-
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" placeholder="98765432" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder=""></textarea>
-                <div>
-                    <input type="checkbox" id="consent" name="content required">
-                    <label for="consent">I allow this website to store my submission so they can respond to my inquiry</label>
+        <div class="contact-content">
+            
+            <div class="form section">
+                <h3>Get In Touch</h3>
+                <h1>Reach Out for Support</h1>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="email@website.com">
+    
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="98765432" required>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder=""></textarea>
+    
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="consent" name="content-required">
+                        <label for="consent">
+                            I allow this website to store my submission so they can respond to my inquiry
+                        </label>
+                    </div>
+                    
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+    
+            
+            <div class="map-section">
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.960227267749!2d144.9631!3d-37.8144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5c3c9fa8bb%3A0x40a394a5170e0a0!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1616260579523!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <button type="submit">SUBMIT</button>
-            </form>
+                
+                <div class="hours">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li><strong>Monday:</strong> 11:00am – 8:00pm</li>
+                        <li><strong>Tuesday:</strong> 11:00am – 8:00pm</li>
+                        <li><strong>Wednesday:</strong> 11:00am – 8:00pm</li>
+                        <li><strong>Thursday:</strong> 11:00am – 8:00pm</li>
+                        <li><strong>Friday:</strong> 11:00am – 8:00pm</li>
+                        <li><strong>Saturday:</strong> 12:00pm – 6:00pm</li>
+                        <li><strong>Sunday:</strong> 12:00pm – 6:00pm</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-
     
-    <section id="map-container">
-        <h2>Find Us Here</h2>
-        <div id="map"></div>
-    </section>
-
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-
-    <script>
-        
-        function initMap() {
-            
-            var location = { lat: 1.3521, lng: 103.8198 }; 
-
-            
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 14,
-                center: location
-            });
-
-            
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
-
 </body>
 </html>
