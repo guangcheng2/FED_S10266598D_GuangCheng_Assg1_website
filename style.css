@@ -162,10 +162,12 @@ body {
 }
 
 .service-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd; 
 }
+
 
 .service-item h4 {
     font-size: 1.2rem;
