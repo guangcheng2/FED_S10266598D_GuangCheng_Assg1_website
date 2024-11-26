@@ -1,3 +1,4 @@
+/* first page */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -380,4 +381,182 @@ button[type="submit"]:hover {
 .hours li strong {
     color: #30A14E;
 }
+
+/*pet sitting*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.header {
+    background-color: #1f3d1f;
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-contact {
+    border: 2px solid white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: white;
+    color: #1f3d1f;
+}
+
+
+.service-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h2 {
+    color: #1f3d1f;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.text-content .btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.text-content .btn:hover {
+    background-color: #218838;
+}
+
+.image-content img {
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.cta {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background-color: white;
+    color: #28a745;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.footer {
+    background-color: #1f3d1f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .service-detail {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .text-content, .image-content {
+        max-width: 100%;
+    }
+
+    .image-content img {
+        margin: 20px 0;
+        max-width: 80%;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+}
+
+/* mobile vet service*/
 
