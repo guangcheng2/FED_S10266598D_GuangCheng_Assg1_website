@@ -708,3 +708,22 @@ body {
     text-align: center;
     padding: 1rem 0;
 }
+
+.center-text .text-content {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+
+.service-detail .image-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.service-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
