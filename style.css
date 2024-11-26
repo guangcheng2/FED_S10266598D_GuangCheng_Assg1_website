@@ -560,3 +560,151 @@ body {
 
 /* mobile vet service*/
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.header {
+    background: #122312;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links .btn-contact {
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links .btn-contact:hover {
+    background: #fff;
+    color: #122312;
+}
+
+
+.service-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background: #f5f5f5;
+}
+
+.text-content {
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.text-content h2 {
+    color: #1D441D;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.text-content .btn {
+    background: #1D441D;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.text-content .btn:hover {
+    background: #145414;
+}
+
+.image-content {
+    width: 40%;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+.cta {
+    text-align: center;
+    background: #1D441D;
+    color: #fff;
+    padding: 2rem 10%;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta .btn {
+    background: #fff;
+    color: #1D441D;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta .btn:hover {
+    background: #1D441D;
+    color: #fff;
+}
+
+
+.footer {
+    background: #122312;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
