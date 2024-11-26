@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Haven Singapore</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <h1 class="logo">PET-HAVEN</h1>
+            <a href="index.html" class="logo">PET-HAVEN</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="hero" id="home">
         <div class="hero-content">
             <h2 class="hero-title">PAWSITIVITY</h2>
@@ -42,7 +49,6 @@
         <h3 class="section-title">OUR IDEAS</h3>
         <h2>Unlock your potential with us</h2>
         <div class="services-grid">
-            
             <div class="service-item">
                 <a href="pet-sitting.html">
                     <img src="pug.jpg" alt="Pet Sitting">
@@ -50,7 +56,6 @@
                     <p>Reliable care for your pets while you're away.</p>
                 </a>
             </div>
-            
             <div class="service-item">
                 <a href="mobile-vet.html">
                     <img src="mobilevet.jpg" alt="Mobile Vet Services">
@@ -58,7 +63,6 @@
                     <p>Convenience and care for your pets at home.</p>
                 </a>
             </div>
-            
             <div class="service-item">
                 <a href="pet-friendly-workspaces.html">
                     <img src="PAW.jpg" alt="Pet-Friendly Workspaces">
@@ -66,7 +70,6 @@
                     <p>Create an inclusive environment for pet lovers.</p>
                 </a>
             </div>
-            
             <div class="service-item">
                 <a href="initial-consultation.html">
                     <img src="initialconsultation.jpg" alt="Initial Consultation">
@@ -74,7 +77,6 @@
                     <p>Get started with an initial consultation.</p>
                 </a>
             </div>
-
             <div class="service-item">
                 <a href="products.html">
                     <img src="pettreats.jpg" alt="Products">
@@ -82,7 +84,6 @@
                     <p>Explore our wide range of products for your pets.</p>
                 </a>
             </div>
-            
             <div class="service-item">
                 <a href="follow-up-consultation.html">
                     <img src="followupconsult.jpg" alt="Follow-Up Consultation">
@@ -90,40 +91,37 @@
                     <p>Continue with personalized follow-ups.</p>
                 </a>
             </div>
-            
-            
         </div>
     </section>
-    
 
-    <div class="contact-page-container">
-        <div class="contact-left">
-            <h3>Get In Touch</h3>
-            <h2>Reach Out for Support</h2>
-            <form>
-                <label for="name">Name *</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
-    
-                <label for="email">Email address *</label>
-                <input type="email" id="email" name="email" placeholder="email@website.com" required>
-    
-                <label for="phone">Phone number *</label>
-                <input type="text" id="phone" name="phone" placeholder="+65 98765432" required>
-    
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder=""></textarea>
-    
-                <div class="checkbox-container">
-                    <input type="checkbox" id="consent" name="consent" required>
-                    <label for="consent">I allow this website to store my submission so they can respond to my inquiry.</label>
-                </div>
-    
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-page-container">
+            <div class="contact-left">
+                <h3>Get In Touch</h3>
+                <h2>Reach Out for Support</h2>
+                <form>
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
 
-        <div class="contact-right">
-            <h3>Get in touch</h3>
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email" placeholder="email@website.com" required>
+
+                    <label for="phone">Phone number *</label>
+                    <input type="text" id="phone" name="phone" placeholder="+65 98765432" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder=""></textarea>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I allow this website to store my submission so they can respond to my inquiry.</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
             <div class="contact-right">
                 <h3>Get in touch</h3>
                 <div class="map-container">
@@ -137,22 +135,21 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-            <p>📧 guangcheng0129@gmail.com</p>
-            <h4>Location</h4>
-            <p>📍 Singapore SG</p>
-            <h4>Hours</h4>
-            <ul>
-                <li>Monday: 11:00am – 8:00pm</li>
-                <li>Tuesday: 11:00am – 8:00pm</li>
-                <li>Wednesday: 11:00am – 8:00pm</li>
-                <li>Thursday: 11:00am – 8:00pm</li>
-                <li>Friday: 11:00am – 8:00pm</li>
-                <li>Saturday: 12:00pm – 6:00pm</li>
-                <li>Sunday: 12:00pm – 6:00pm</li>
-            </ul>
+                <p>📧 guangcheng0129@gmail.com</p>
+                <h4>Location</h4>
+                <p>📍 Singapore SG</p>
+                <h4>Hours</h4>
+                <ul>
+                    <li>Monday: 11:00am - 8:00pm</li>
+                    <li>Tuesday: 11:00am - 8:00pm</li>
+                    <li>Wednesday: 11:00am - 8:00pm</li>
+                    <li>Thursday: 11:00am - 8:00pm</li>
+                    <li>Friday: 11:00am - 8:00pm</li>
+                    <li>Saturday: 12:00pm - 6:00pm</li>
+                    <li>Sunday: 12:00pm - 6:00pm</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    
-    
+    </section>
 </body>
 </html>
