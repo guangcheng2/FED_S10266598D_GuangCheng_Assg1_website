@@ -729,7 +729,7 @@ body {
 }
 
 /*pet-workspace*/
-/* General Reset */
+
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
@@ -746,14 +746,14 @@ body {
     margin: 0;
 }
 
-/* Header */
+
 .header {
     background-color: #1b3a24;
     padding: 20px 10%;
     color: white;
-    position: fixed; /* Fixes the header at the top */
-    width: 100%; /* Ensures the header spans the full width */
-    z-index: 1000; /* Keeps the header above other content */
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
     top: 0;
 }
 
@@ -798,12 +798,12 @@ body {
     color: #1b3a24;
 }
 
-/* Add padding to the top of the main content */
+
 .main-content {
-    padding-top: 100px; /* Adjusts for the fixed header height */
+    padding-top: 100px; 
 }
 
-/* Service Detail Section */
+
 .service-detail {
     display: flex;
     flex-direction: column;
@@ -856,7 +856,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Call to Action */
+
 .cta {
     background-color: #4caf50;
     color: white;
@@ -892,7 +892,7 @@ body {
     color: #4caf50;
 }
 
-/* Footer */
+
 .footer {
     background-color: #1b3a24;
     color: white;
@@ -901,3 +901,81 @@ body {
     font-size: 14px;
 }
 
+/*schedule appointment*/
+
+.main-content {
+    padding-top: 120px; 
+    margin: 0 auto;
+    max-width: 900px; 
+    text-align: center; 
+}
+
+
+.meeting-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-form h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.meeting-form h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.meeting-form p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.date-selector {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.time-slots button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.time-slots button:hover {
+    background-color: #f4f4f4;
+}
+
+
+.footer {
+    background-color: #1b3a24;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
