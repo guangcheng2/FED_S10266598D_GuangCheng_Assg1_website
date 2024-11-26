@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Consultation - Pet Haven Singapore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">PET-HAVEN</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="initial-consultation">
+        <div class="consultation-info">
+            <h2>Initial Consultation for $150</h2>
+            <p>Get started with a comprehensive consultation to assess your needs and how we can help with your pets. Whether you're looking for pet-sitting services, mobile vet assistance, or creating a pet-friendly workspace, this consultation is the first step to making it all happen.</p>
+            <p><strong>Price: $150</strong></p>
+            <p>During the consultation, we will go over your specific requirements and offer tailored solutions for your pets. Book now to get started!</p>
+        </div>
+
+        <div class="booking-form">
+            <h3>Book Your Initial Consultation</h3>
+            <form action="#" method="POST">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="text" id="phone" name="phone" placeholder="+65 12345678" required>
+
+                <label for="service">Service Interested In *</label>
+                <select id="service" name="service" required>
+                    <option value="pet-sitting">Pet Sitting</option>
+                    <option value="mobile-vet">Mobile Vet Services</option>
+                    <option value="pet-friendly-workspaces">Pet-Friendly Workspaces</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Any additional details or questions"></textarea>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I consent to having this website store my submitted information for consultation purposes.</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pet Haven Singapore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
