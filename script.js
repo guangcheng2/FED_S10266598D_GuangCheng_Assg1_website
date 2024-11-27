@@ -15,3 +15,38 @@ consultationTypeSelect.addEventListener('change', function () {
         form.querySelector('form').querySelector('button').innerText = 'Submit Follow-Up Consultation';
     }
 });
+
+/*appointment*/
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const service = params.get("service");
+
+    const serviceNameElement = document.querySelector("#service-name");
+    if (service) {
+        const formattedService = service.replace(/-/g, " ");
+        serviceNameElement.innerText = `Schedule an Appointment for ${formattedService}`;
+    }
+
+    
+    const calendarEl = document.getElementById("calendar");
+
+    if (calendarEl) {
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: "dayGridMonth",
+            headerToolbar: {
+                left: "prev,next today",
+                center: "title",
+                right: "dayGridMonth,timeGridWeek,timeGridDay"
+            },
+            selectable: true,
+            dateClick: (info) => {
+                alert(`You selected: ${info.dateStr}`);
+            }
+        });
+
+        calendar.render();
+    } else {
+        console.error("Calendar container (#calendar) not found!");
+    }
+});
+
