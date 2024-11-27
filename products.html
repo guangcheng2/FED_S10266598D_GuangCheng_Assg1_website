@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Products - PET-HAVEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">PET-HAVEN</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <p>Browse through our selection of pet treats, food, and toys to pamper your furry friends!</p>
+
+        <div class="products-grid">
+            <div class="product-item" data-id="1" data-name="Delicious Dog Treats" data-price="12.99">
+                <img src="dog-treats.jpg" alt="Dog Treats">
+                <h3>Delicious Dog Treats</h3>
+                <p>Healthy, tasty treats that your dog will love. Made with natural ingredients.</p>
+                <p class="price">$12.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-item" data-id="2" data-name="Premium Cat Food" data-price="19.99">
+                <img src="cat-food.jpg" alt="Cat Food">
+                <h3>Premium Cat Food</h3>
+                <p>Nutritious food for your cat, made with quality proteins and vitamins.</p>
+                <p class="price">$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-item" data-id="3" data-name="Interactive Dog Toy" data-price="9.99">
+                <img src="dog-toy.jpg" alt="Dog Toy">
+                <h3>Interactive Dog Toy</h3>
+                <p>Engage your dog with this fun and durable toy for hours of entertainment.</p>
+                <p class="price">$9.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-item" data-id="4" data-name="Pet Care Kit" data-price="29.99">
+                <img src="care-kit.jpg" alt="Pet Care Kit">
+                <h3>Pet Care Kit</h3>
+                <p>Everything you need to pamper your pet. Includes grooming essentials, toys, and more!</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-item" data-id="5" data-name="Cat Scratching Post" data-price="25.99">
+                <img src="scratching-post.jpg" alt="Cat Scratching Post">
+                <h3>Cat Scratching Post</h3>
+                <p>Durable scratching post for your cat's entertainment and health.</p>
+                <p class="price">$25.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-item" data-id="6" data-name="Interactive Cat Toy" data-price="15.99">
+                <img src="cat-toy.jpg" alt="Interactive Cat Toy">
+                <h3>Interactive Cat Toy</h3>
+                <p>Engage your cat with this fun, motion-activated toy!</p>
+                <p class="price">$15.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="cart">
+        <span class="item-count">Items in Cart: 0</span>
+        <button id="view-cart">View Cart</button>
+    </div>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Schedule Appointment</a></li>
+            <li><a href="#">Complete Intake</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>© 2024 PET-HAVEN. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
