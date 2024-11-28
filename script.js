@@ -46,38 +46,41 @@ $(document).ready(function () {
 
 /* products*/
 
-// Initialize an empty cart
-let cart = [];
+const cart = [];
+const cartItemsContainer = document.getElementById('cart-items');
+const cartTotal = document.getElementById('cart-total');
+const products = [
+    { id: 1, name: "Dog Treats", price: 5.99 },
+    { id: 2, name: "Cat Toy", price: 3.49 },
+    { id: 3, name: "Premium Pet Food", price: 14.99 },
+    { id: 4, name: "Chew Bone", price: 6.99 },
+    { id: 5, name: "Bird Seed", price: 4.99 },
+    { id: 6, name: "Hamster Wheel", price: 10.49 },
+];
 
-// Function to update the cart display
-function updateCart() {
-    const cartItemCount = document.querySelector('.cart .item-count');
-    cartItemCount.textContent = `Items in Cart: ${cart.length}`;
-}
-
-// Add product to the cart when the button is clicked
 document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', function() {
-        const product = this.closest('.product-item');
-        const productId = product.getAttribute('data-id');
-        const productName = product.getAttribute('data-name');
-        const productPrice = parseFloat(product.getAttribute('data-price'));
-
-        const cartItem = {
-            id: productId,
-            name: productName,
-            price: productPrice
-        };
-
-        // Add the product to the cart array
-        cart.push(cartItem);
+    button.addEventListener('click', (e) => {
+        const productId = parseInt(e.target.closest('.product-card').dataset.id);
+        const product = products.find(p => p.id === productId);
+        cart.push(product);
         updateCart();
     });
 });
 
-// View Cart Function (expandable)
-document.getElementById('view-cart').addEventListener('click', function() {
-    alert(`You have ${cart.length} item(s) in your cart.`);
-});
+function updateCart() {
+    cartItemsContainer.innerHTML = '';
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+    } else {
+        cart.forEach((item, index) => {
+            const cartItem = document.createElement('p');
+            cartItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            cartItemsContainer.appendChild(cartItem);
+        });
+    }
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    cartTotal.textContent = total.toFixed(2);
+}
+
 
 
