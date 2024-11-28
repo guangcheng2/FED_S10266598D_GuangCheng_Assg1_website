@@ -82,5 +82,13 @@ function updateCart() {
     cartTotal.textContent = total.toFixed(2);
 }
 
+/* consultation*/
+document.getElementById("consultationForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from being submitted
+
+    // Show the success message
+    document.getElementById("successMessage").style.display = "block";
+});
+
 
 
