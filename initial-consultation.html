@@ -21,47 +21,42 @@
 
     <section class="consultation">
         <h2>Consultation Options</h2>
-        <div id="consultation-form">
-            <form id="consultationForm" action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email address *</label>
-                    <input type="email" id="email" name="email" placeholder="email@website.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone number *</label>
-                    <input type="text" id="phone" name="phone" placeholder="+65 98765432" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="consultation-type">Select Consultation Type</label>
-                    <select id="consultation-type" name="consultation-type">
-                        <option value="initial">Initial Consultation - $150</option>
-                        <option value="follow-up">Follow-Up Consultation - $100</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder=""></textarea>
-                </div>
-
+        <div id="form-container">
+            <form id="consultationForm">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+        
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" required placeholder="email@website.com">
+        
+                <label for="phone">Phone number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+65 98765432">
+        
+                <label for="consultation-type">Select Consultation Type</label>
+                <select id="consultation-type" name="consultation-type">
+                    <option value="initial">Initial Consultation - $150</option>
+                    <option value="follow-up">Follow-Up Consultation - $100</option>
+                </select>
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message"></textarea>
+        
                 <div class="checkbox-container">
                     <input type="checkbox" id="consent" name="consent" required>
                     <label for="consent">I allow this website to store my submission so they can respond to my inquiry.</label>
                 </div>
-
-                <button type="submit">Submit</button>
-            </form>
-            <p id="successMessage" style="display: none; color: green;">Your submission was successful!</p>
+        
+                <form id="consultation-form">
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="confirmation-message" style="display: none;">
+                    Thank you for your information. We received your response and emailed you a copy.
+                </div>
+                
         </div>
+        
     </section>
-
-    <script src="consultation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"defer></script>
 </body>
 </html>

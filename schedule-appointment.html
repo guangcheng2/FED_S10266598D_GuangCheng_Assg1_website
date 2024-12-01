@@ -3,22 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendar Booking</title>
+  <title>Schedule Appointment</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
 </head>
 <body>
-  <!-- Calendar section -->
-  <div id="calendar-container">
-    <div id="calendar"></div>
-    <div id="selected-date-info">
-      <p id="selected-date"></p>
-      <button id="book-slot" disabled>Book Slot</button>
-    </div>
-  </div>
-
-  <!-- Navigation and form section -->
   <header class="header">
     <nav class="navbar">
       <a href="index.html" class="logo">PET-HAVEN</a>
@@ -30,16 +18,25 @@
       </ul>
     </nav>
   </header>
-  
+
   <main>
     <section class="consultation">
       <h1>Schedule an Appointment</h1>
       <h2>We look forward to meeting with you!</h2>
-      <div class="form-group">
-        <label for="date-picker">Select a date and time *</label>
-        <input type="text" id="date-picker" placeholder="Select Date and Time" required>
-      </div>
       <form id="appointment-form">
+        <div class="form-group">
+          <label for="date">Select a Date *</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time-slot">Select a Time Slot *</label>
+          <select id="time-slot" name="time-slot" required>
+            <option>Choose a time</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+          </select>
+        </div>
+
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" required>
@@ -70,5 +67,7 @@
     </ul>
     <p>© 2024 PET-HAVEN. All Rights Reserved.</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
