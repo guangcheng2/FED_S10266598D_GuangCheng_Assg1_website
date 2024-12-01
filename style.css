@@ -451,28 +451,33 @@ body {
 
 
 .service-detail {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Aligns the text and image side by side */
+    align-items: center; /* Vertically aligns content */
+    justify-content: space-between; /* Distributes space evenly */
+    gap: 20px; /* Adds space between the text and image */
     padding: 60px 20px;
     background-color: #f9f9f9;
 }
 
 .text-content {
-    flex: 1; /* Ensures the text content takes up equal space */
-    padding-right: 20px; /* Space between the text and image */
+    flex: 1; /* Allows the text to take up equal space */
+    padding-right: 20px; /* Adds spacing between text and image */
 }
 
 .image-content {
-    flex: 1; /* Ensures the image content takes up equal space */
+    flex: 1; /* Allows the image to take up equal space */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
 }
 
 .image-content img {
-    width: 100%; /* Make the image responsive */
-    max-width: 350px; /* Limit image size */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Makes the image responsive */
+    max-width: 350px; /* Limits the image size */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
+
 
 .text-content h2 {
     color: #1f3d1f;
